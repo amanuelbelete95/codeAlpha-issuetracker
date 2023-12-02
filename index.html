@@ -17,41 +17,56 @@
       </header>
 
       <main class="main">
-        <form>
-          <input
-            type="text"
-            placeholder="add issue" />
-          <button type="button">Add issue</button>
+        <form
+          class="issue-form"
+          id="form">
+          <div>
+            <label for="issueInput">New Issue:</label>
+            <input
+              type="text"
+              id="issueInput"
+              class="issue-input"
+              required />
+          </div>
+
+          <div>
+            <label for="descriptionInput">Description:</label>
+            <textarea
+              type="text"
+              form="form"
+              id="description-text"
+              class="description-text"
+              placeholder="Get the description of the issue here"
+              required></textarea>
+          </div>
+          <button
+            type="submit"
+            class="add-btn">
+            Add Issue
+          </button>
         </form>
 
         <section class="issue-container">
           <div>
             <h3>Open issues</h3>
-            <ul>
-              <li>
-                <span class="open">open</span>
-              </li>
-            </ul>
+            <ul class="open-list"></ul>
           </div>
 
           <div>
             <h3>In progress issue</h3>
             <ul>
-              <li>
-                <span class="progress">progress</span>
-              </li>
+              <li></li>
             </ul>
           </div>
           <div>
             <h3>Completed issues</h3>
             <ul>
-              <li>
-                <span class="close">close</span>
-              </li>
+              <li></li>
             </ul>
           </div>
         </section>
       </main>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>

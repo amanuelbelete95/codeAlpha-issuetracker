@@ -3,3 +3,7 @@
   border: 2px solid rgb(27, 32, 27);
   justify-content: space-around;
 }
+
+form {
+  margin-bottom: 60px;
+}
