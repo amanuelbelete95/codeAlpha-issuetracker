@@ -26,6 +26,7 @@
               type="text"
               id="issueInput"
               class="issue-input"
+              placeholder='add-new-issue'
               required />
           </div>
 
@@ -47,10 +48,14 @@
         </form>
 
         <section class="issue-container">
-          <span class='span-info'> <li>CLick on the span to move betwen different issues states
+          <div class='span-info'> 
+            <h2>Follow this instructions to manage your project status:</h2>
+            <li>CLick on the Span to move between different issues states
+            
             <li>Adjust your work flow based on the following issue tracker website</li>
-          </li></span>
-          <div>
+          </li>
+        </div>
+          <div class='open-container'>
             <h3 class="open-heading">Open issues</h3>
             <ul class="open-list">
               <li class="open-list-element">
@@ -75,11 +80,11 @@
             </ul>
           </div>
 
-          <div>
+          <div class='open-container'>
             <h3 class="progress-heading">In progress issue</h3>
             <ul class="progress-list"></ul>
           </div>
-          <div>
+          <div class='open-container'>
             <h3 class="complete-heading">Completed issues</h3>
             <ul class="complete-list"></ul>
           </div>
