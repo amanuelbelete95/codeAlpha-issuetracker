@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="style.css" />
+  </head>
+  <body>
+    <div>
+      <header>
+        <h1>Issue Tracker Website</h1>
+      </header>
+
+      <main class="main">
+        <form
+          class="issue-form"
+          id="form">
+          <div class="input-container">
+            <label for="issueInput">New Issue:</label>
+            <input
+              type="text"
+              id="issueInput"
+              class="issue-input"
+              placeholder='add-new-issue'
+              required />
+          </div>
+
+          <div class="input-container">
+            <label for="descriptionInput">Description:</label>
+            <textarea
+              type="text"
+              form="form"
+              id="description-text"
+              class="description-text"
+              placeholder="Get the description of the issue here"
+              required></textarea>
+          </div>
+          <button
+            type="submit"
+            class="add-btn">
+            Add Issue
+          </button>
+        </form>
+
+        <section class="issue-container">
+          <div class='span-info'> 
+            <h2>Follow this instructions to manage your project status:</h2>
+            <li>CLick on the Span to move between different issues states
+            
+            <li>Adjust your work flow based on the following issue tracker website</li>
+          </li>
+        </div>
+          <div class='open-container'>
+            <h3 class="open-heading">Open issues</h3>
+            <ul class="open-list">
+              <li class="open-list-element">
+                <span class="issue-title-class">Add To do SetUp</span>
+                <div>
+                  <strong>Description</strong>
+                  <p>Add setup file</p>
+                  <p>Add Linters error configuration file</p>
+                  <p>Create A new branch for setup</p>
+                </div>
+              </li>
+
+              <li class="open-list-element">
+                <span class="issue-title-class">Add To Do functionality</span>
+                <div>
+                  <strong>Description</strong>
+                  <p>Add functionality to remove Todos</p>
+                  <p>Add functionality to add Todos</p>
+                  <p>Add functionality to edit Todos</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class='open-container'>
+            <h3 class="progress-heading">In progress issue</h3>
+            <ul class="progress-list"></ul>
+          </div>
+          <div class='open-container'>
+            <h3 class="complete-heading">Completed issues</h3>
+            <ul class="complete-list"></ul>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
