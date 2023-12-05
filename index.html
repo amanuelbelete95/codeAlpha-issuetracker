@@ -20,7 +20,7 @@
         <form
           class="issue-form"
           id="form">
-          <div>
+          <div class="input-container">
             <label for="issueInput">New Issue:</label>
             <input
               type="text"
@@ -29,7 +29,7 @@
               required />
           </div>
 
-          <div>
+          <div class="input-container">
             <label for="descriptionInput">Description:</label>
             <textarea
               type="text"
@@ -47,22 +47,41 @@
         </form>
 
         <section class="issue-container">
+          <span class='span-info'> <li>CLick on the span to move betwen different issues states
+            <li>Adjust your work flow based on the following issue tracker website</li>
+          </li></span>
           <div>
-            <h3>Open issues</h3>
-            <ul class="open-list"></ul>
+            <h3 class="open-heading">Open issues</h3>
+            <ul class="open-list">
+              <li class="open-list-element">
+                <span class="issue-title-class">Add To do SetUp</span>
+                <div>
+                  <strong>Description</strong>
+                  <p>Add setup file</p>
+                  <p>Add Linters error configuration file</p>
+                  <p>Create A new branch for setup</p>
+                </div>
+              </li>
+
+              <li class="open-list-element">
+                <span class="issue-title-class">Add To Do functionality</span>
+                <div>
+                  <strong>Description</strong>
+                  <p>Add functionality to remove Todos</p>
+                  <p>Add functionality to add Todos</p>
+                  <p>Add functionality to edit Todos</p>
+                </div>
+              </li>
+            </ul>
           </div>
 
           <div>
-            <h3>In progress issue</h3>
-            <ul>
-              <li></li>
-            </ul>
+            <h3 class="progress-heading">In progress issue</h3>
+            <ul class="progress-list"></ul>
           </div>
           <div>
-            <h3>Completed issues</h3>
-            <ul>
-              <li></li>
-            </ul>
+            <h3 class="complete-heading">Completed issues</h3>
+            <ul class="complete-list"></ul>
           </div>
         </section>
       </main>
